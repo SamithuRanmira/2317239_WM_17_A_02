@@ -59,10 +59,18 @@ body
     padding-top: 20px;
 }
 
-.user_01_details h1
+.user_01_details h2
 {
 
     margin-top: 30px;
+    font-size: 32px;
+
+}
+
+#userName_1
+{
+
+    font-size: 42px;
 
 }
 
@@ -86,11 +94,19 @@ body
 
 }
 
-.user_02_details h1
+.user_02_details h2
 {
 
     margin-top: 30px;
+    font-size: 32px;
 
+}
+
+#userName_2
+{
+
+    font-size: 42px;
+    
 }
 
 .userName
