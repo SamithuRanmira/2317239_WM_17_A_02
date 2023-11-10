@@ -1,0 +1,365 @@
+*
+{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body
+{
+
+    box-sizing: border-box;
+    background-image: url('/src/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.container_01
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.container_02
+{
+
+    width: 1300px;
+    height: 580px;
+    border-radius: 40px;
+
+}
+
+.user_01
+{
+
+    width: 260px;
+    height: 300px;
+    background-color: rgba(255, 176, 57, 0.8);
+    border-radius: 20px;
+
+}
+
+.user_01_details
+{
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.user_01_details h1
+{
+
+    margin-top: 30px;
+
+}
+
+.user_02
+{
+
+    width: 260px;
+    height: 300px;
+    background-color: rgba(255, 176, 57, 0.8);
+    border-radius: 20px;
+
+}
+
+.user_02_details
+{
+
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.user_02_details h1
+{
+
+    margin-top: 30px;
+
+}
+
+.marks
+{
+
+    margin-top: 80px;
+    font-size: 32px;
+
+}
+
+.container_03
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.dice_01
+{
+
+    width: 300px;
+    height: 400px;
+    margin-right: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.dice_02
+{
+
+    width: 300px;
+    height: 400px;
+    margin-left: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.dice
+{
+
+    width: 240px;
+    height: 240px;
+    margin: 0 30px 0 30px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.all_dots
+{
+
+    width: 200px;
+    height: 200px;
+
+}
+
+.n1_1
+{
+
+    background: white;
+}
+
+.n1_2
+{
+
+    background: white;
+}
+
+.n2_1
+{
+
+    background: white;
+}
+
+.n2_2
+{
+
+    background: white;
+}
+
+.n3_1
+{
+
+    background: white;
+}
+
+.n3_2
+{
+
+    background: white;
+}
+
+.n4_1
+{
+
+    background: white;
+}
+
+.n4_2
+{
+
+    background: white;
+}
+
+.n5_1
+{
+
+    background: black;
+}
+
+.n5_2
+{
+
+    background: black;
+}
+
+.n6_1
+{
+
+    background: white;
+}
+
+.n6_2
+{
+
+    background: white;
+}
+
+.n7_1
+{
+
+    background: white;
+}
+
+.n7_2
+{
+
+    background: white;
+}
+
+.n8_1
+{
+
+    background: white;
+}
+
+.n8_2
+{
+
+    background: white;
+}
+
+.n9_1
+{
+
+    background: white;
+}
+
+.n9_2
+{
+
+    background: white;
+}
+
+.dots
+{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.dots span
+{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+
+}
+
+.dice_ope
+{
+
+    margin-left: 50px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+}
+
+.btn
+{
+
+
+    padding: 20px;
+
+}
+
+.btn_solve
+{
+
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn_solve:hover
+{
+
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+
+}
+
+.number
+{
+
+    margin-top: 40px;
+    padding: 20px;
+    width: 160px;
+    height: 30px;
+
+}
+
+.number span
+{
+
+    font-size: 32px;
+    position: fixed;
+
+}
+
+.roll
+{
+
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    background-color: rgba(255, 176, 57, 0.8);
+    display: none;
+    cursor: pointer;
+
+}
+
+.roll:hover
+{
+
+    border: 1px solid black;
+}

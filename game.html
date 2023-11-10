@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container_01">
+        <div class="container_02">
+            <div class="container_03">
+                <div class="user_01">
+                    <div class="user_01_details">
+                        <h2>Player 1</h2>
+                        <h1 id="userName_1"></h1>
+                        <div class="marks">
+                            <span id="userMarks_1">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dice_01">
+                    <div class="dice">
+                        <div class="all_dots">
+                            <div class="dots">
+                                <span class="n1_1" id="n1_1"></span>
+                                <span class="n2_1" id="n2_1"></span>
+                                <span class="n3_1" id="n3_1"></span>
+                                <span class="n4_1" id="n4_1"></span>
+                                <span class="n5_1" id="n5_1"></span>
+                                <span class="n6_1" id="n6_1"></span>
+                                <span class="n7_1" id="n7_1"></span>
+                                <span class="n8_1" id="n8_1"></span>
+                                <span class="n9_1" id="n9_1"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dice_ope">
+                        <div class="number">
+                            <span id="num_panel_01">1</span>
+                        </div>
+                        <div class="btn">
+                                <button class="btn_solve" onclick="user_01()" id="btn_1">Solve</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="roll" onclick="reloadPage()" id="roll">Play Again</button>
+                <div class="dice_02">
+                    <div class="dice">
+                        <div class="all_dots">
+                            <div class="dots">
+                                <span class="n1_2" id="n1_2"></span>
+                                <span class="n2_2" id="n2_2"></span>
+                                <span class="n3_2" id="n3_2"></span>
+                                <span class="n4_2" id="n4_2"></span>
+                                <span class="n5_2" id="n5_2"></span>
+                                <span class="n6_2" id="n6_2"></span>
+                                <span class="n7_2" id="n7_2"></span>
+                                <span class="n8_2" id="n8_2"></span>
+                                <span class="n9_2" id="n9_2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dice_ope">
+                        <div class="number">
+                            <span id="num_panel_02">1</span>
+                        </div>
+                        <div class="btn">
+                                <button class="btn_solve" onclick="user_02()" id="btn_2">Solve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="user_02">
+                    <div class="user_02_details">
+                        <h2>Player 02</h2>
+                        <h1 id="userName_2"></h1>
+                        <div class="marks">
+                            <span id="userMarks_2">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
