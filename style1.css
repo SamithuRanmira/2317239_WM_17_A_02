@@ -1,150 +1,436 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
 *
 {
 
     margin: 0;
     padding: 0;
+    font-family: "Audiowide";
 
 }
 
 body
 {
 
-    width: 100%;
-    height: 100vh;
     box-sizing: border-box;
     background-image: url('src/background.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
     box-sizing: border-box;
-    overflow-y: hidden;
 
 }
 
 .container_01
 {
 
-    margin-top: -60px;
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
 
 }
 
 .container_02
 {
 
-    width: 600px;
-    height: 400px;
-    background-color: rgba(255, 255, 255, 0.6);
+    width: 1300px;
+    height: 580px;
     border-radius: 40px;
 
 }
 
-.header
+.user_01
 {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    font-size: 38px;
-    font-weight: 700;
-    background: linear-gradient(to right, #f32170, 
-    #ff6b08, #cf23cf, #eedd44);
-    -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text; 
-    
+    width: 260px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+
 }
 
-.user_input_form
+.user_01_details
 {
 
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.user_01_details h2
+{
+
+    margin-top: 30px;
+    font-size: 32px;
 
 }
 
-.form
+#userName_1
 {
 
-    width: 500px;
+    font-size: 42px;
+
+}
+
+.user_02
+{
+
+    width: 260px;
     height: 300px;
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+
+}
+
+.user_02_details
+{
+
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
     text-align: center;
 
 }
 
-.user1
+.user_02_details h2
 {
 
-    margin: 40px;
+    margin-top: 30px;
     font-size: 32px;
 
 }
 
-.user2
+#userName_2
 {
 
-    margin: 20px;
+    font-size: 42px;
+
+}
+
+.userName
+{
+
+    height: 40px;
+}
+
+.win_indicate
+{
+    height: 50px;
+    color: red;
+    margin: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#win1
+{
+
+    display: none;
+
+}
+
+#win2{
+
+    display: none;
+
+}
+
+.marks
+{
+
+    margin-top: 60px;
     font-size: 32px;
+
 }
 
-.input1
+.h1
 {
-    width: 200px;
-    height: 30px;
-    border: none;
-    border-bottom: 2px solid gray;
-    outline: 0;
-    font-size: 18px;
-    background: transparent;
-    border-radius: 10px;
-    padding: 6px;
-    
+
+    margin-top: 20px;
+
 }
 
-.input2
+.container_03
 {
 
-    width: 200px;
-    height: 30px;
-    border: none;
-    border-bottom: 2px solid gray;
-    outline: 0;
-    font-size: 18px;
-    background: transparent;
-    border-radius: 10px;
-    padding: 6px;
+    width: 100%;
+    text-align: center;
+    color: white;
+
 }
 
-.submit
+.container_04
 {
 
-    margin: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
 
 }
 
-.input
+.dice_01
 {
 
     width: 300px;
-    height: 60px;
-    border-radius: 10px;
+    height: 400px;
+    margin-right: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.dice_02
+{
+
+    width: 300px;
+    height: 400px;
+    margin-left: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.dice
+{
+
+    width: 240px;
+    height: 240px;
+    margin: 0 30px 0 30px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.all_dots
+{
+
+    width: 200px;
+    height: 200px;
+
+}
+
+.n1_1
+{
+
+    background: white;
+}
+
+.n1_2
+{
+
+    background: white;
+}
+
+.n2_1
+{
+
+    background: white;
+}
+
+.n2_2
+{
+
+    background: white;
+}
+
+.n3_1
+{
+
+    background: white;
+}
+
+.n3_2
+{
+
+    background: white;
+}
+
+.n4_1
+{
+
+    background: white;
+}
+
+.n4_2
+{
+
+    background: white;
+}
+
+.n5_1
+{
+
+    background: black;
+}
+
+.n5_2
+{
+
+    background: black;
+}
+
+.n6_1
+{
+
+    background: white;
+}
+
+.n6_2
+{
+
+    background: white;
+}
+
+.n7_1
+{
+
+    background: white;
+}
+
+.n7_2
+{
+
+    background: white;
+}
+
+.n8_1
+{
+
+    background: white;
+}
+
+.n8_2
+{
+
+    background: white;
+}
+
+.n9_1
+{
+
+    background: white;
+}
+
+.n9_2
+{
+
+    background: white;
+}
+
+.dots
+{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.dots span
+{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+
+}
+
+.dice_ope
+{
+
+    margin-left: 50px;
+    width: 200px;
+    background-color: rgba(243, 124, 124, 0.4);
+    border-radius: 20px;
+}
+
+.btn
+{
+
+
+    padding: 20px;
+
+}
+
+.btn_solve
+{
+
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
     border: none;
-    background: linear-gradient(to right, #f32170, 
-    #ff6b08, #cf23cf, #eedd44);
-    color: white;
-    font-size: 28px;
     cursor: pointer;
+
+}
+
+.btn_solve:hover
+{
+
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+
+}
+
+.number
+{
+
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    width: 160px;
+    height: 30px;
+
+}
+
+.number span
+{
+
+    font-size: 32px;
+    position: fixed;
+
+}
+
+.roll
+{
+
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    background: linear-gradient(to right, rgb(255, 0, 234), rgb(0, 255, 42));
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+}
+
+.roll:hover
+{
+
+    border: 1px solid black;
 
 }
