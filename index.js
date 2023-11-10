@@ -5,8 +5,6 @@ function getUsersName(){
 
     localStorage.setItem("Player_01", userName1);
     localStorage.setItem("Player_02", userName2);
-
-    window.location = "game.html";
     
     return;
 

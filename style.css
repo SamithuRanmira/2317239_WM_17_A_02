@@ -14,6 +14,9 @@ body
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
 
 }
 
@@ -23,7 +26,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
 }
@@ -42,7 +45,7 @@ body
 
     width: 260px;
     height: 300px;
-    background-color: rgba(255, 176, 57, 0.8);
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
 
 }
@@ -68,7 +71,7 @@ body
 
     width: 260px;
     height: 300px;
-    background-color: rgba(255, 176, 57, 0.8);
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
 
 }
@@ -90,15 +93,59 @@ body
 
 }
 
+.userName
+{
+
+    height: 40px;
+}
+
+.win_indicate
+{
+    height: 50px;
+    color: red;
+    margin: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#win1
+{
+
+    display: none;
+
+}
+
+#win2{
+
+    display: none;
+
+}
+
 .marks
 {
 
-    margin-top: 80px;
+    margin-top: 60px;
     font-size: 32px;
 
 }
 
+.h1
+{
+
+    margin-top: 20px;
+
+}
+
 .container_03
+{
+
+    width: 100%;
+    text-align: center;
+    color: white;
+
+}
+
+.container_04
 {
 
     display: flex;
@@ -106,6 +153,7 @@ body
     align-items: center;
     width: 100%;
     height: 100%;
+    margin-top: 20px;
 
 }
 
@@ -292,7 +340,7 @@ body
 
     margin-left: 50px;
     width: 200px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(243, 124, 124, 0.4);
     border-radius: 20px;
 }
 
@@ -328,8 +376,9 @@ body
 .number
 {
 
+    text-align: center;
     margin-top: 40px;
-    padding: 20px;
+    padding: 10px;
     width: 160px;
     height: 30px;
 

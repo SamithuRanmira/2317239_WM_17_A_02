@@ -4,17 +4,6 @@ let = user2_Click = 0;
 let userMarks_1 = 0;
 let userMarks_2 = 0;
 
-window.addEventListener('load', () => {
-
-    const player1 = localStorage.getItem('Player_01');
-    const player2 = localStorage.getItem('Player_02');
-    
-
-    document.getElementById("userName_1").innerHTML = player1;
-    document.getElementById("userName_2").innerHTML = player2;
-
-});
-
 choseUser = Math.floor(Math.random() * 2) + 1;
 
 if (choseUser === 1){
@@ -33,6 +22,16 @@ else{
 }
 
 
+window.addEventListener('load', () => {
+
+    const player1 = localStorage.getItem('Player_01');
+    const player2 = localStorage.getItem('Player_02');
+    
+
+    document.getElementById("userName_1").innerHTML = player1;
+    document.getElementById("userName_2").innerHTML = player2;
+
+});
 
 function user_01(){
 
@@ -49,15 +48,12 @@ function user_01(){
 
     }
 
-    if(userMarks_1 >= 10){
+    if(userMarks_1 >= 100){
 
-        won_1();
-
-    }
-
-    if(userMarks_2 >= 10){
-
-        won_2();
+        document.getElementById("btn_1").disabled = true;
+        document.getElementById("btn_2").disabled = true;
+        document.getElementById("roll").style.display = "block";
+        document.getElementById("win1").style.display = "block";
 
     }
     
@@ -114,9 +110,12 @@ function user_02(){
         
     }
 
-    if(userMarks_2 >= 10){
+    if(userMarks_2 >= 100){
 
-        won_1();
+        document.getElementById("btn_1").disabled = true;
+        document.getElementById("btn_2").disabled = true;
+        document.getElementById("roll").style.display = "block";
+        document.getElementById("win2").style.display = "block";
 
     }
 
@@ -316,23 +315,5 @@ function n6_2(){
 function reloadPage(){
 
     location.reload();
-
-}
-
-function won_1(){
-
-    document.getElementById("btn_1").disabled = true;
-    document.getElementById("btn_2").disabled = true;
-    document.getElementById("roll").style.display = "block";
-    alert(player1)
-
-}
-
-function won_2(){
-
-    document.getElementById("btn_1").disabled = true;
-    document.getElementById("btn_2").disabled = true;
-    document.getElementById("roll").style.display = "block";
-
 
 }
