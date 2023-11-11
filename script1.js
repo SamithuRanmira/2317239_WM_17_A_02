@@ -35,6 +35,38 @@ window.addEventListener('load', () => {
 
 });
 
+function rollStart1(){
+
+    document.getElementById("dice_01").style.display = "none";
+    document.getElementById("dice_roll_div_1").style.display = "block";
+    let img = document.createElement('img');
+    img.src = '/src/dice.gif';
+    document.getElementById("dice_roll_div_1").appendChild(img);
+    img.classList.add('dice_roll_1');
+
+    //check 1st player clicked value and gisable first player roll button and enable second player roll button
+    if (user1_Click === 1){
+
+        document.getElementById("btn_1").disabled = true;
+
+    }
+
+    setTimeout(() => {
+
+        document.getElementById("dice_01").style.display = "block";
+        document.getElementById("dice_roll_div_1").style.display = "none";
+        img.remove();
+
+            //set total & dice dots values in html
+        document.getElementById("userMarks_1").innerHTML = userMarks_1;
+        document.getElementById("num_panel_01").innerHTML = number_1;
+        document.getElementById("btn_2").disabled = false;
+
+    
+    }, 3400);
+    
+}
+
 //first player click button function
 function user_01(){
 
@@ -42,19 +74,13 @@ function user_01(){
     number_1 = Math.floor(Math.random()* 6) + 1;
     //assign total of marka
     userMarks_1 = userMarks_1 + number_1;
-    //set total & dice dots values in html
-    document.getElementById("userMarks_1").innerHTML = userMarks_1;
-    document.getElementById("num_panel_01").innerHTML = number_1;
+
     //assign clicked values
     user1_Click = user1_Click + 1;
     user2_Click = 0;
-    //check 1st player clicked value and gisable first player roll button and enable second player roll button
-    if (user1_Click === 1){
 
-        document.getElementById("btn_1").disabled = true;
-        document.getElementById("btn_2").disabled = false;
-
-    }
+    //call dice cube rolling animation
+    rollStart1();
 
     //check the totla and display the winner
     if(userMarks_1 >= 100){
@@ -107,20 +133,46 @@ function user_01(){
 
 }
 
+function rollStart2(){
+
+    document.getElementById("dice_02").style.display = "none";
+    document.getElementById("dice_roll_div_2").style.display = "block";
+    let img = document.createElement('img');
+    img.src = '/src/dice.gif';
+    document.getElementById("dice_roll_div_2").appendChild(img);
+    img.classList.add('dice_roll_2');
+
+    if (user2_Click === 1){
+
+        document.getElementById("btn_2").disabled = true;
+
+    }
+
+    setTimeout(() => {
+
+        document.getElementById("dice_02").style.display = "block";
+        document.getElementById("dice_roll_div_2").style.display = "none";
+        img.remove();
+
+            //set total & dice dots values in html
+        document.getElementById("userMarks_2").innerHTML = userMarks_2;
+        document.getElementById("num_panel_02").innerHTML = number_2;
+        document.getElementById("btn_1").disabled = false;
+            
+    
+    }, 3200);
+
+}
+
 function user_02(){
 
     number_2 = Math.floor(Math.random()* 6) + 1;
     userMarks_2 = userMarks_2 + number_2;
-    document.getElementById("userMarks_2").innerHTML = userMarks_2;
-    document.getElementById("num_panel_02").innerHTML = number_2;
+
     user2_Click = user2_Click + 1;
     user1_Click = 0;
-    if (user2_Click === 1){
 
-        document.getElementById("btn_1").disabled = false;
-        document.getElementById("btn_2").disabled = true;
-        
-    }
+    rollStart2();
 
     if(userMarks_2 >= 100){
 
@@ -212,7 +264,7 @@ function reset_2(){
 function n1_1(){
 
     reset_1();
-    document.getElementById("n5_1").style.background = "black";
+    document.getElementById("n5_1").style.background = "red";
 
 }
 
@@ -273,7 +325,7 @@ function n6_1(){
 function n1_2(){
 
     reset_2();
-    document.getElementById("n5_2").style.background = "black";
+    document.getElementById("n5_2").style.background = "red";
 
 }
 
