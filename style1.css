@@ -477,6 +477,7 @@ body
     height: 60px;
     border-radius: 20px;
     border: none;
+    margin-right: 18px;
     font-weight: 500;
     background: linear-gradient(to right, rgb(255, 0, 234), rgb(0, 255, 42));
     display: none;

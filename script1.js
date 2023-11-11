@@ -65,8 +65,20 @@ function rollStart1(){
         //check 1st player clicked value and gisable first player roll button and enable second player roll button
         document.getElementById("btn_2").disabled = false;
 
+        //check the totla and display the winner
+        if(userMarks_1 >= 20){
+
+            //disable players roll buttons
+            document.getElementById("btn_1").disabled = true;
+            document.getElementById("btn_2").disabled = true;
+            //display play again button & winner
+            document.getElementById("roll").style.display = "block";
+            document.getElementById("win1").style.display = "block";
+
+        }
+
     
-    }, 3400);
+    }, 3200);
     
 }
 
@@ -84,18 +96,6 @@ function user_01(){
 
     //call dice cube rolling animation
     rollStart1();
-
-    //check the totla and display the winner
-    if(userMarks_1 >= 100){
-
-        //disable players roll buttons
-        document.getElementById("btn_1").disabled = true;
-        document.getElementById("btn_2").disabled = true;
-        //display play again button & winner
-        document.getElementById("roll").style.display = "block";
-        document.getElementById("win1").style.display = "block";
-
-    }
     
     //randomly genarated values and get similar side of the dots in dice cube
     if (number_1 === 1){
@@ -161,7 +161,15 @@ function rollStart2(){
         document.getElementById("userMarks_2").innerHTML = userMarks_2;
         document.getElementById("num_panel_02").innerHTML = number_2;
         document.getElementById("btn_1").disabled = false;
-            
+        
+        if(userMarks_2 >= 20){
+
+            document.getElementById("btn_1").disabled = true;
+            document.getElementById("btn_2").disabled = true;
+            document.getElementById("roll").style.display = "block";
+            document.getElementById("win2").style.display = "block";
+    
+        }
     
     }, 3200);
 
@@ -176,15 +184,6 @@ function user_02(){
     user1_Click = 0;
 
     rollStart2();
-
-    if(userMarks_2 >= 100){
-
-        document.getElementById("btn_1").disabled = true;
-        document.getElementById("btn_2").disabled = true;
-        document.getElementById("roll").style.display = "block";
-        document.getElementById("win2").style.display = "block";
-
-    }
 
 
     if (number_2 === 1){
