@@ -37,11 +37,13 @@ window.addEventListener('load', () => {
 
 function rollStart1(){
 
+    //create img element tag
     document.getElementById("dice_01").style.display = "none";
     document.getElementById("dice_roll_div_1").style.display = "block";
     let img = document.createElement('img');
     img.src = '/src/dice.gif';
     document.getElementById("dice_roll_div_1").appendChild(img);
+    //add class name to created img element tag
     img.classList.add('dice_roll_1');
 
     //check 1st player clicked value and gisable first player roll button and enable second player roll button
@@ -60,6 +62,7 @@ function rollStart1(){
             //set total & dice dots values in html
         document.getElementById("userMarks_1").innerHTML = userMarks_1;
         document.getElementById("num_panel_01").innerHTML = number_1;
+        //check 1st player clicked value and gisable first player roll button and enable second player roll button
         document.getElementById("btn_2").disabled = false;
 
     
