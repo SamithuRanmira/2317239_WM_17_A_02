@@ -66,7 +66,7 @@ function rollStart1(){
         document.getElementById("btn_2").disabled = false;
 
         //check the totla and display the winner
-        if(userMarks_1 >= 20){
+        if(userMarks_1 >= 50){
 
             //disable players roll buttons
             document.getElementById("btn_1").disabled = true;
@@ -162,7 +162,7 @@ function rollStart2(){
         document.getElementById("num_panel_02").innerHTML = number_2;
         document.getElementById("btn_1").disabled = false;
         
-        if(userMarks_2 >= 20){
+        if(userMarks_2 >= 50){
 
             document.getElementById("btn_1").disabled = true;
             document.getElementById("btn_2").disabled = true;
