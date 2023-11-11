@@ -1,11 +1,13 @@
-let = user1_Click = 0;
-let = user2_Click = 0;
+let = user1_Click = 0;  //amount of player1 clicked
+let = user2_Click = 0;  //amount of player1 clicked
 
-let userMarks_1 = 0;
-let userMarks_2 = 0;
+let userMarks_1 = 0;  //total marks of the rolled
+let userMarks_2 = 0;  //total marks of the rolled
 
+//chose randomly who is the first roll
 choseUser = Math.floor(Math.random() * 2) + 1;
 
+//randomly chosed player button enable and disable another player button
 if (choseUser === 1){
 
     alert("Start with first Player");
@@ -21,7 +23,7 @@ else{
     document.getElementById("btn_2").disabled = false;
 }
 
-
+//get players name from localstorage and set values in html tags
 window.addEventListener('load', () => {
 
     const player1 = localStorage.getItem('Player_01');
@@ -33,14 +35,20 @@ window.addEventListener('load', () => {
 
 });
 
+//first player click button function
 function user_01(){
 
+    //randomly get the value of dice
     number_1 = Math.floor(Math.random()* 6) + 1;
+    //assign total of marka
     userMarks_1 = userMarks_1 + number_1;
+    //set total & dice dots values in html
     document.getElementById("userMarks_1").innerHTML = userMarks_1;
     document.getElementById("num_panel_01").innerHTML = number_1;
+    //assign clicked values
     user1_Click = user1_Click + 1;
     user2_Click = 0;
+    //check 1st player clicked value and gisable first player roll button and enable second player roll button
     if (user1_Click === 1){
 
         document.getElementById("btn_1").disabled = true;
@@ -48,15 +56,19 @@ function user_01(){
 
     }
 
+    //check the totla and display the winner
     if(userMarks_1 >= 100){
 
+        //disable players roll buttons
         document.getElementById("btn_1").disabled = true;
         document.getElementById("btn_2").disabled = true;
+        //display play again button & winner
         document.getElementById("roll").style.display = "block";
         document.getElementById("win1").style.display = "block";
 
     }
     
+    //randomly genarated values and get similar side of the dots in dice cube
     if (number_1 === 1){
 
         n1_1();
@@ -158,6 +170,7 @@ function user_02(){
 
 }
 
+//set all dots to white color in 1st dice cube
 function reset_1(){
 
     document.getElementById("n1_1").style.background = "white";
@@ -175,6 +188,7 @@ function reset_1(){
 
 }
 
+//set all dots to white color in 1st dice cube
 function reset_2(){
 
     document.getElementById("n1_2").style.background = "white";
@@ -191,6 +205,9 @@ function reset_2(){
     document.getElementById("n9_2").style.display = "block";
 
 }
+
+
+//set randomly genarated values similar sides of dots function
 
 function n1_1(){
 
@@ -240,6 +257,7 @@ function n5_1(){
 function n6_1(){
 
     reset_1();
+    //disable last 3 of dots to display 6 of dots in dice cude
     document.getElementById("n7_1").style.display = "none";
     document.getElementById("n8_1").style.display = "none";
     document.getElementById("n9_1").style.display = "none";

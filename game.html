@@ -10,15 +10,28 @@
     <div class="container_01">
         <div class="container_02">
             <div class="container_03">
+
+                <!-- target to win the game -->
+
                 <h1 class="h1" id="h1">Get 100 to Win!</h1>
+
                 <div class="container_04">
+
+                    <!-- win indicator -->
+
                     <div class="win_div">
                         <div class="win_indicate">
                             <h2 id="win1">You won!</h2>
                         </div>
+
+                        <!-- first player details -->
+
                         <div class="user_01">
                             <div class="user_01_details">
                                 <h2>Player 1</h2>
+
+                                <!-- display input first player name -->
+
                                 <div class="userName">
                                     <h2 id="userName_1"></h2>
                                 </div>
@@ -28,9 +41,15 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- dice cube -->
+
                     <div class="dice_01">
                         <div class="dice">
                             <div class="all_dots">
+
+                                <!-- dice cube dot (for display the value of 6 sides) -->
+
                                 <div class="dots">
                                     <span class="n1_1" id="n1_1"></span>
                                     <span class="n2_1" id="n2_1"></span>
@@ -44,15 +63,21 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- at one the time dice indicate dots values using numbers -->
+
                         <div class="dice_ope">
                             <div class="number">
                                 <span id="num_panel_01">1</span>
                             </div>
                             <div class="btn">
-                                    <button class="btn_solve" onclick="user_01()" id="btn_1">Solve</button>
+                                    <button class="btn_solve" onclick="user_01()" id="btn_1">Roll</button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- after the won and play again -->
+
                     <button class="roll" onclick="reloadPage()" id="roll">Play Again</button>
                     <div class="dice_02">
                         <div class="dice">
@@ -75,7 +100,7 @@
                                 <span id="num_panel_02">1</span>
                             </div>
                             <div class="btn">
-                                    <button class="btn_solve" onclick="user_02()" id="btn_2">Solve</button>
+                                    <button class="btn_solve" onclick="user_02()" id="btn_2">Roll</button>
                             </div>
                         </div>
                     </div>
