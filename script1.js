@@ -41,7 +41,7 @@ function rollStart1(){
     document.getElementById("dice_01").style.display = "none";
     document.getElementById("dice_roll_div_1").style.display = "block";
     let img = document.createElement('img');
-    img.src = '/src/dice.gif';
+    img.src = 'src/dice.gif';
     document.getElementById("dice_roll_div_1").appendChild(img);
     //add class name to created img element tag
     img.classList.add('dice_roll_1');
@@ -141,7 +141,7 @@ function rollStart2(){
     document.getElementById("dice_02").style.display = "none";
     document.getElementById("dice_roll_div_2").style.display = "block";
     let img = document.createElement('img');
-    img.src = '/src/dice.gif';
+    img.src = 'src/dice.gif';
     document.getElementById("dice_roll_div_2").appendChild(img);
     img.classList.add('dice_roll_2');
 
